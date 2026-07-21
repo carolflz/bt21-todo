@@ -1,0 +1,71 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.newProjectRow {
+  position: relative;
+}
+.rjPeek {
+  position: absolute;
+  top: -43px;
+  left: 68%;
+  transform: translateX(-50%);
+  width: 49px;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.newProjectBtn {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.archivedSection {
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+}
+.archivedToggle {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+.archivedToggle:hover {
+  color: var(--color-text);
+}
+.decoration {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  pointer-events: none;
+  user-select: none;
+}
+.decoration img {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  display: block;
+}

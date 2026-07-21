@@ -1,0 +1,24 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(45, 42, 61, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background-color: var(--color-surface-raised);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-raised);
+  padding: 24px;
+  min-width: 320px;
+  max-width: 90vw;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: var(--color-text);
+}

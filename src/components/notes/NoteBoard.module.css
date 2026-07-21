@@ -1,0 +1,19 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px 0;
+}
+.newNoteBtn {
+  flex-shrink: 0;
+}
+.canvas {
+  position: relative;
+  flex: 1;
+  overflow: auto;
+}

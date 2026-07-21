@@ -1,0 +1,58 @@
+.note {
+  position: absolute;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  touch-action: none;
+}
+.note:active {
+  cursor: grabbing;
+}
+
+.titleInput {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--color-text);
+}
+.titleInput:focus {
+  outline: none;
+}
+
+.bodyInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 13px;
+  color: var(--color-text);
+  font-family: inherit;
+}
+.bodyInput:focus {
+  outline: none;
+}
+
+.resizeHandle {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 14px;
+  height: 14px;
+  cursor: nwse-resize;
+  border-radius: 4px;
+}
+.resizeHandle::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
